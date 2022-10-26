@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - DH</title>
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: whitesmoke;
+            font-family: sans-serif;
+        }
+
+        form{
+            background-color: lightgray;
+            width: 500px;
+            max-width: 100%;
+            margin: 50%;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        form div, h1, .senha{
+            margin: 20px;
+        }
+        
+        textarea{
+            width: 400px;
+            height: 150px;
+        }
+    </style>
+
+</head>
+<body>
+
+       <form>
+        <h1>Formulario DH</h1>
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="email" id="email">
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email">
+        </div>
+
+        
+        <label for="senha" class="senha">
+            Senha:
+            <input type="password" name="senha">
+        </label>
+
+        <div>
+            <label for="idade">Nascimento:</label>
+            <input type="date" name="data" id="data">
+        </div>
+
+        <div>
+            <label for="estado">UF:</label>
+            <select name="estado" id="estado">
+                <option selected disabled>Selecione um opcao</option>
+                <option value="alagas">Alagoas</option>
+                <option value="pernambunco">Pernambuco</option>
+                <option value="paraiba">Paraiba</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="avatar">Selecione a foto do perfil</label>
+            <input type="file" name="avatar" id="avatar">
+        </div>
+
+        <div>
+            <label for="altura">Altura</label>
+            <input type="number" name="altura" id="altura" step="0.1">
+        </div>
+
+        <div>
+            <label for="sobre">Sobre voce</label>
+            <textarea name="sobre" id="sobre" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <p>Genero</p>
+            <div>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="masculino">
+
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" id="feminino">
+            </div>
+        </div>
+
+            
+       </form> 
+
+</body>
+</html>
